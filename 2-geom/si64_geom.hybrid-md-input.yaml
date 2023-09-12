@@ -1,12 +1,16 @@
-
-can_update: true
-check_interval: 5
-num_initial_steps: 2
-
+can_update: true # if updates are to be performed
+check_interval: 10
+num_initial_steps: 5
 adaptive_method_parameters:
   n_min: 5
-  n_max: 10000
+  n_max: 100
   factor: 1.5
+
+tolerances:
+  ediff: 0.005  # eV
+  fmax: 0.5     # eV/A
+  frmse: 0.3    # eV/A
+  vmax: null    # eV (virial)
 
 refit:
   num_threads: 16
@@ -18,10 +22,7 @@ refit:
                    cutoff_transition_width=1.0 central_weight=1.0 n_sparse=500 \
                    delta=0.1 f0=0.0 covariance_type=dot_product sparse_method=cur_points"
   extra_gap_opts: "sparse_jitter = 1.0e-8"
-  e0: "Si:-165.0678" # from Pseudo-potential calculation
-
-tolerances:
-  ediff: 0.005  # eV
-  fmax:  0.8    # eV/A
-  frmse: 0.3   # eV/A
-  vmax: null    # eV (virial)
+  e0: "average"
+  previous_data: [
+    "FILL_THIS_IN.xyz"
+  ]
