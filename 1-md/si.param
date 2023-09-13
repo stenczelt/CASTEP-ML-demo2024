@@ -23,7 +23,7 @@ md_sample_iter     10
 
 %BLOCK DEVEL_CODE
 
-  ! generally turns on PP, this is needed together with "MD_PP_HYBRID=T"
+  ! generally turns on PP, this is needed together with "PP_HYBRID=T"
   PP=T
   MD: PP=T :ENDMD
 
@@ -34,7 +34,7 @@ md_sample_iter     10
       quip_init_args:IP GAP:endquip_init_args
   :endpp
 
-  ! settings of PP Hybrid MD
+  ! settings of PP Hybrid
   PP_HYBRID=T
   pp_hybrid_exec:
     hybrid-md
