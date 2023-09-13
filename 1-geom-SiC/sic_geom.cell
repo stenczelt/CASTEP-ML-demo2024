@@ -1,0 +1,38 @@
+#  Hybrid MD decision making package
+#
+#  Copyright (c) Tamas K. Stenczel 2021.
+#
+#  Copyright granted for CDG on 28/06/2021 for use of
+#      this example in the CASTEP source distribution.
+
+FIX_COM = true
+
+%BLOCK LATTICE_CART
+ 4.350000  0.000000  0.000000
+ 0.000000  4.350000  0.000000
+ 0.000000  0.000000  4.350000
+%ENDBLOCK LATTICE_CART
+
+%BLOCK POSITIONS_FRAC
+ C           0.204231   0.224509   0.261043 
+ C           0.257352   0.771320   0.786588 
+ C           0.787174   0.227844   0.778010 
+ C           0.775268   0.768021   0.244617 
+Si           0.032263   0.972848   0.006568 
+Si           0.020569   0.483992   0.511391 
+Si           0.526834   0.013385   0.507598 
+Si           0.536393   0.485345   0.013892 
+%ENDBLOCK POSITIONS_FRAC
+
+#%BLOCK POSITIONS_ABS
+#Si  0.000000  0.000000  0.000000
+# C  1.087500  1.087500  1.087500
+#Si  0.000000  2.175000  2.175000
+# C  1.087500  3.262500  3.262500
+#Si  2.175000  0.000000  2.175000
+# C  3.262500  1.087500  3.262500
+#Si  2.175000  2.175000  0.000000
+# C  3.262500  3.262500  1.087500
+#%ENDBLOCK POSITIONS_ABS
+
+fix_all_cell = true

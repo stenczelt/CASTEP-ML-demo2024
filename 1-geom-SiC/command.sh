@@ -3,4 +3,4 @@ which gap_fit
 which castep.mpi
 which hybrid-md
 
-orterun -n 16 --oversubscribe  castep.mpi si
+orterun -n 4 --oversubscribe  castep.mpi si
