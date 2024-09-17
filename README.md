@@ -6,7 +6,7 @@ Either go to https://www.mahti.csc.fi/ and log in through the browser, or
 
 start an interactive session
 ```bash
-sinteractive --account project_2010950 --time 24:00:00 --cores 16
+sinteractive --account project_2010950 --time 24:00:00 --cores 4
 ```
 
 copy the demo files
@@ -28,3 +28,23 @@ Further reading:
 - `2-MACE-refit` fine-tuning MACE-MP0 on-the-fly
 - `3-MACE-custom-refit` fine-tuning with user-supplied logic for refitting
 - `4-try-your-own` try this on your own system
+
+## Getting started:
+
+load modules & paths
+```
+module use --append /projappl/project_2010950/modules
+module load castep/cpu+QUIP+MACE
+```
+
+create a python environment
+```
+cd examples/
+bash bootstrap.sh
+source venv/bin/activate
+```
+
+or use `/projappl/project_2010950/castep-ml/venv`
+
+Can run each 
+

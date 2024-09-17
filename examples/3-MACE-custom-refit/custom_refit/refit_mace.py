@@ -1,6 +1,6 @@
 #  Hybrid MD decision making package
 #
-#  Copyright (c) Tamas K. Stenczel 2021-2023.
+#  Copyright (c) Tamas K. Stenczel 2021-2024.
 """Refitting of MACE models on the fly"""
 import json
 from argparse import Namespace

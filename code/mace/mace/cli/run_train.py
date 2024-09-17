@@ -63,7 +63,7 @@ def main() -> None:
     run(args)
 
 
-def run(args: argparse.Namespace) -> Module | None:
+def run(args: argparse.Namespace) -> Optional[Module]:
     """
     This script runs the training/fine tuning for mace
     """
