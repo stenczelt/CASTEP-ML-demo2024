@@ -17,3 +17,14 @@ cd castep-ml-demo
 
 Further reading: 
 - documentation: https://libatoms.github.io/GAP/accelerated-aimd.html
+
+## Structure
+
+`code/` contains a copy of `mace` & `hybrid-md` tailored to our setup
+
+`examples/` contains a series of examples:
+- `0-GAP-from-scratch` GAP with TurboSOAP trained from scratch
+- `1-MACE-only-checking` MACE-MP0 with only checking accuracy
+- `2-MACE-refit` fine-tuning MACE-MP0 on-the-fly
+- `3-MACE-custom-refit` fine-tuning with user-supplied logic for refitting
+- `4-try-your-own` try this on your own system
