@@ -1,0 +1,29 @@
+#  Hybrid MD decision making package
+#
+#  Copyright (c) Tamas K. Stenczel 2021-2022.
+
+cut_off_energy = 200 eV
+elec_energy_tol = 0.0001 eV
+finite_basis_corr = 0
+fix_occupancy = true
+backup_interval = 0
+calculate_stress = true
+popn_calculate   = false
+write_checkpoint = none
+
+comment = MD with Hybrid method
+task = molecular dynamics
+
+md_ensemble = NVT
+md_delta_t = 2 fs
+md_num_iter = 1000
+md_temperature = 600 K
+md_sample_iter = 10
+
+# QUIP & MLE settings
+FF_MODEL=QUIP
+FF_QUIP_PARAM_FILE=GAP.xml
+FF_QUIP_INIT_ARGS=IP GAP
+
+ML_ENERGY = True
+MLE_CMD = hybrid-md

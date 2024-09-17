@@ -1,0 +1,25 @@
+cut_off_energy = 200 eV
+finite_basis_corr = 0
+fix_occupancy = true
+backup_interval = 0
+calculate_stress = true
+write_checkpoint = none
+
+task = molecular dynamics
+
+md_ensemble = NVT
+md_delta_t = 2 fs
+md_num_iter = 5000
+md_temperature = 600 K
+md_sample_iter = 10
+
+# MACE & MLE settings
+FF_MODEL=MACE
+FF_MACE_MODEL_FILE=MACE-jit.pt
+
+ML_ENERGY = True
+MLE_CMD = hybrid-md
+
+ELEC_CONVERGENCE_WIN = 2
+
+
